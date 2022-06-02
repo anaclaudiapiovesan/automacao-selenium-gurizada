@@ -1,8 +1,6 @@
 package selenium;
 
 import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -24,7 +22,7 @@ public abstract class AbstractTestes {
         return driver;
     }
 
-    //@After
+    @After
     public void fechar(){
 
         driver.quit();
