@@ -10,7 +10,7 @@ public class ComponentesStepDefinition {
 
     ComponentesPageObject pageObject;
 
-    public ComponentesStepDefinition(){
+    public ComponentesStepDefinition() {
         pageObject = new ComponentesPageObject();
     }
 
@@ -29,5 +29,15 @@ public class ComponentesStepDefinition {
     @Entao("Deve validar o conteúdo do textfield")
     public void deve_validar_o_conteúdo_do_textfield() {
         Assert.assertEquals("Ana", pageObject.getNome());
+    }
+
+    @Quando("Selecionar radio button")
+    public void selecionar_radio_button() {
+
+    }
+
+    @Entao("Radio feminino deve estar marcado")
+    public void radio_feminino_deve_estar_marcado() {
+
     }
 }
